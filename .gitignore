@@ -1,0 +1,38 @@
+# Build directories (covers build/, build-clang64/, etc.)
+build/
+build-*/
+out/
+cmake-build-*/
+
+# Third-party dependencies (e.g., Asio)
+third_party/
+
+# CMake generated files (in case of accidental in-source builds)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+Makefile
+*.ninja
+.ninja_deps
+.ninja_log
+
+# clangd / Language Server cache
+.cache/
+
+# Compiled binaries and object files
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# VS Code & OS files
+.vscode/
+.DS_Store
+Thumbs.db
