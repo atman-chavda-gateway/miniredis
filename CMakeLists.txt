@@ -11,6 +11,7 @@ find_package(Threads REQUIRED)
 
 add_executable(miniredis
     src/main.cpp
+    src/client_session.cpp
 )
 
 target_include_directories(miniredis

@@ -1,7 +1,7 @@
-#include<asio.hpp>
+#include "client_session.hpp"
 
-#include<exception>
-#include<print>
+#include <memory>
+#include <utility>
 
 int main()
 {
@@ -20,8 +20,8 @@ int main()
                 {
                     if(!error)
                     {
-                        const auto remote = socket.remote_endpoint();
-                        std::println("Accepted connection from {}:{}", remote.address().to_string(), remote.port());
+                        auto session = std::make_shared<ClientSession>(std::move(socket));
+                        session->start();
                     }
                     else
                     {
