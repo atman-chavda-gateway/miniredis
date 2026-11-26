@@ -12,6 +12,7 @@ find_package(Threads REQUIRED)
 add_executable(miniredis
     src/main.cpp
     src/client_session.cpp
+    src/protocol/resp_parser.cpp
 )
 
 target_include_directories(miniredis
