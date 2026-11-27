@@ -13,6 +13,7 @@ add_executable(miniredis
     src/main.cpp
     src/client_session.cpp
     src/protocol/resp_parser.cpp
+    src/storage/database.cpp
 )
 
 target_include_directories(miniredis
